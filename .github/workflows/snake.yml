@@ -2,8 +2,11 @@ name: Generate Snake 🐍
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Executa todo dia à meia-noite (UTC)
-  workflow_dispatch:    # Permite executar manualmente
+    - cron: "0 0 * * *"  # Executa todo dia à meia-noite (UTC)
+  workflow_dispatch:    # Permite rodar manualmente
+
+permissions:
+  contents: write  # Dá permissão para o GITHUB_TOKEN fazer commits no repositório
 
 jobs:
   generate:
@@ -30,4 +33,3 @@ jobs:
           author_email: github-actions@github.com
           message: "Generate snake commit 🐍"
           add: "output/*.svg"
-          # GITHUB_TOKEN já está disponível automaticamente
