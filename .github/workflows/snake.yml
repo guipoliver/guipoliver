@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3  # Faz o checkout do repositório
+      # Faz o checkout do repositório
+      - uses: actions/checkout@v3
 
+      # Gera a cobrinha
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
@@ -20,6 +22,7 @@ jobs:
             ./output/github-contribution-grid-snake.svg
             ./output/github-contribution-grid-snake-dark.svg?palette=github-dark
 
+      # Commit e push das imagens geradas (usando GITHUB_TOKEN para autenticação)
       - name: Commit & Push
         uses: EndBug/add-and-commit@v9
         with:
@@ -27,4 +30,4 @@ jobs:
           author_email: github-actions@github.com
           message: "Generate snake commit 🐍"
           add: "output/*.svg"
-          token: ${{ secrets.GH_TOKEN }}  # Usando o segredo para autenticação
+          # GITHUB_TOKEN já está disponível automaticamente
