@@ -20,8 +20,6 @@ Bem-vindo ao meu perfil! Sou um desenvolvedor apaixonado por **tecnologia**, **c
 
 - **Email**: guilherme098321@gmail.com
 
-## 🔗 Contribuições
-
 Se você gostou do meu trabalho, fique à vontade para dar **star** nos projetos ou contribuir com sugestões! Estou sempre aberto a novas ideias e colaborações.
 
 ![snake gif](https://github.com/guipoliver/guipoliver/blob/main/output/github-contribution-grid-snake.svg)
