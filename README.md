@@ -10,7 +10,7 @@ Bem-vindo ao meu perfil! Sou um desenvolvedor apaixonado por **tecnologia**, **c
 
 ## 🛠️ Habilidades
 
-- **Linguagens de programação**: JavaScript, Python, Java, C
+- **Linguagens de programação**: JavaScript, Python, C
 - **Frameworks**: Node.js, Flask
 - **Ferramentas**: Git, VSCode
 - **Banco de dados**: MySQL
